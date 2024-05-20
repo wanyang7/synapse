@@ -1,0 +1,66 @@
+{
+	"name": "Notebook 1",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "testpool",
+			"type": "BigDataPoolReference"
+		},
+		"targetSparkConfiguration": {
+			"referenceName": "sparkConfiguration1",
+			"type": "SparkConfigurationReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 5,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "true",
+				"spark.dynamicAllocation.minExecutors": "5",
+				"spark.dynamicAllocation.maxExecutors": "7",
+				"spark.autotune.trackingId": "b29050cd-b2db-4bf7-8cba-dac14f4c7228"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1"
+			},
+			"enableDebugMode": false,
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/ywtest/providers/Microsoft.Synapse/workspaces/ywtestworkspace/bigDataPools/testpool",
+				"name": "testpool",
+				"type": "Spark",
+				"endpoint": "https://ywtestworkspace.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/testpool",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "3.1",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30,
+			"targetSparkConfiguration": "sparkConfiguration1"
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"print(a)"
+				],
+				"execution_count": 1
+			}
+		]
+	}
+}

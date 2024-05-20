@@ -1,0 +1,61 @@
+{
+	"name": "Pipeline 11",
+	"properties": {
+		"activities": [
+			{
+				"name": "Notebook1",
+				"type": "SynapseNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebook": {
+						"referenceName": "Notebook 1",
+						"type": "NotebookReference"
+					},
+					"parameters": {
+						"Abc": {
+							"value": "abc",
+							"type": "string"
+						},
+						"bCd": {
+							"value": "bcd",
+							"type": "string"
+						}
+					},
+					"snapshot": true,
+					"sparkPool": {
+						"referenceName": "ywtestsparkpool",
+						"type": "BigDataPoolReference"
+					},
+					"conf": {
+						"spark.dynamicAllocation.enabled": true,
+						"spark.dynamicAllocation.minExecutors": 1,
+						"spark.dynamicAllocation.maxExecutors": 2
+					},
+					"numExecutors": 1,
+					"configurationType": "Artifact",
+					"targetSparkConfiguration": {
+						"referenceName": "sparkConfiguration2",
+						"type": "SparkConfigurationReference"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"Notebook1": {
+				"type": "String",
+				"defaultValue": "Notebook 1"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-05-19T06:06:18Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

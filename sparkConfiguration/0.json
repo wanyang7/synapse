@@ -1,0 +1,14 @@
+{
+	"name": "0",
+	"properties": {
+		"configs": {
+			"spark.acls.enable": "false"
+		},
+		"created": "2022-11-28T06:48:40.892Z",
+		"createdBy": "wanyang@microsoft.com",
+		"annotations": [],
+		"configMergeRule": {
+			"artifact.currentOperation.spark.acls.enable": "replace"
+		}
+	}
+}

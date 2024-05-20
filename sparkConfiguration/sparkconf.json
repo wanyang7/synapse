@@ -1,0 +1,22 @@
+{
+	"name": "sparkconf",
+	"properties": {
+		"configs": {
+			"spark.network.timeout": "10000000",
+			"spark.executor.heartbeatInterval": "1000",
+			"spark.synapse.logAnalytics.enabled": "true",
+			"spark.synapse.logAnalytics.workspaceId": "xxxxxxxxxxxxxxxxxxxxxxxxxxx",
+			"spark.synapse.logAnalytics.secret": "xxxxxxxxxxxxxxxxxxxxx"
+		},
+		"created": "2024-04-01T06:40:39.113Z",
+		"createdBy": "wanyang@microsoft.com",
+		"annotations": [],
+		"configMergeRule": {
+			"artifact.currentOperation.spark.network.timeout": "replace",
+			"artifact.currentOperation.spark.executor.heartbeatInterval": "replace",
+			"artifact.currentOperation.spark.synapse.logAnalytics.enabled": "replace",
+			"artifact.currentOperation.spark.synapse.logAnalytics.workspaceId": "replace",
+			"artifact.currentOperation.spark.synapse.logAnalytics.secret": "replace"
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"name": "Spark job definition 1",
+	"properties": {
+		"targetBigDataPool": {
+			"referenceName": "ywtestsparkpool",
+			"type": "BigDataPoolReference"
+		},
+		"requiredSparkVersion": "3.1",
+		"language": "scala",
+		"scanFolder": false,
+		"jobProperties": {
+			"name": "Spark job definition 1",
+			"file": "abfss://ywtestfilesystem@ywtestaccount.dfs.core.windows.net/synapse/workspaces/ywtestworkspace/batchjobs/Spark%20job%20definition%201/wordcount.jar",
+			"className": "WordCount",
+			"conf": {
+				"spark.dynamicAllocation.enabled": "true",
+				"spark.dynamicAllocation.minExecutors": "1",
+				"spark.dynamicAllocation.maxExecutors": "9",
+				"spark.autotune.trackingId": "dad65997-a8e6-4229-a372-ce6534ab7070",
+				"spark.synapse.context.sjdname": "Spark job definition 1"
+			},
+			"args": [
+				"abfss://ywtestfilesystem@ywtestaccount.dfs.core.windows.net/sample/wordtxt.txt",
+				"abfss://ywtestfilesystem@ywtestaccount.dfs.core.windows.net/sample/result/"
+			],
+			"jars": [],
+			"pyFiles": [
+				""
+			],
+			"files": [],
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 1
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"name": "setvariable2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"value": {
+						"key": "test",
+						"value": {
+							"type": "Expression",
+							"content": "@pipeline().Pipeline"
+						}
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-03-13T11:44:41Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

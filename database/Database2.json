@@ -1,0 +1,25 @@
+{
+	"name": "Database2",
+	"properties": {
+		"Name": "Database2",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://ywtestfilesystem@ywtestaccount.dfs.core.windows.net/Database2",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "ywtestworkspace-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "2dbc53cb-c238-4757-ace0-1a3173dea9ef"
+	},
+	"type": "DATABASE"
+}

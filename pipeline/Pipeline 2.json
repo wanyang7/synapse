@@ -1,0 +1,40 @@
+{
+	"name": "Pipeline 2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Spark job definition1",
+				"type": "SparkJob",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"sparkJob": {
+						"referenceName": "Spark job definition 2",
+						"type": "SparkJobDefinitionReference"
+					},
+					"filesV2": [
+						"@concat(concat('1', '.dfs.core.windows.net'), '/020_app/001_frameworks/30_util/util.py')"
+					],
+					"executorSize": null,
+					"conf": {
+						"spark.dynamicAllocation.enabled": null,
+						"spark.dynamicAllocation.minExecutors": null,
+						"spark.dynamicAllocation.maxExecutors": null
+					},
+					"driverSize": null,
+					"numExecutors": null
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-02-03T02:17:47Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

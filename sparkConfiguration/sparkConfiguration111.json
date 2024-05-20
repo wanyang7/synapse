@@ -1,0 +1,16 @@
+{
+	"name": "sparkConfiguration111",
+	"properties": {
+		"configs": {
+			"spark.acls.enable": "false",
+			"spark.shuffle.compress": "true"
+		},
+		"created": "2023-11-09T09:38:02.89Z",
+		"createdBy": "wanyang@microsoft.com",
+		"annotations": [],
+		"configMergeRule": {
+			"artifact.currentOperation.spark.acls.enable": "replace",
+			"artifact.currentOperation.spark.shuffle.compress": "replace"
+		}
+	}
+}
